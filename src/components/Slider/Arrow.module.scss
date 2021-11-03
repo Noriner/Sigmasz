@@ -1,0 +1,29 @@
+.nextwrapper {
+    border: none;
+    background-color: #fff;
+    color: black;
+    display: block;
+    font-size: 30px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+
+    position: absolute;
+    right: -40px;
+    top: 30%;
+}
+
+.prevwrapper {
+    border: none;
+    background-color: #fff;
+    color: black;
+    display: block;
+    font-size: 30px;
+    min-height: 40px;
+    min-width: 40px;
+    cursor: pointer;
+
+    position: absolute;
+    left: -40px;
+    top: 30%;
+}

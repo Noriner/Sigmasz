@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: #5e5e5e;
+    min-height: 50vh;
+    color: #fff;
+    text-align: center;
+
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 40px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        font-family: adobe-caslon-pro, serif;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+        font-size: 19px;
+    }
+
+}

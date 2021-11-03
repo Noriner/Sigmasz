@@ -1,25 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import RangeofServices from './components/RangeofServices/RangeofServices';
+import AboutCompany from './components/AboutCompany/AboutCompany';
+import Contact from './components/Contact/Contact';
+import Offer from './components/Offer/Offer';
+import Footer from './components/Footer/Footer';
+import React from 'react';
+import Modal from './components/Modal/Modal';
+import BackToTop from './components/BackToTop/BackToTop';
 
-function App() {
+
+
+class App extends React.Component {
+
+  state={
+    isModalOpen: false,
+  }
+
+  openModal = () =>{
+    this.setState({
+      isModalOpen: true,
+    })
+  }
+  closeModal = () =>{
+    this.setState({
+      isModalOpen: false,
+    })
+  }
+
+  render(){
+    const { isModalOpen } = this.state;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BackToTop />
+      <Header openModalFn={this.openModal} />
+      <RangeofServices />
+      <AboutCompany />
+      <Offer />
+      <Contact />
+      <Footer />
+      { isModalOpen && <Modal closeModalFn={this.closeModal} /> }
     </div>
   );
+  }
 }
 
 export default App;

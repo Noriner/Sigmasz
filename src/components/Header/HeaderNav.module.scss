@@ -1,0 +1,93 @@
+.wrapper {
+    text-transform: uppercase;
+    padding: 50px;
+
+
+    .logo {
+        font-family: 'Raleway', sans-serif;
+        margin-left: 35px;
+        float: left;
+        color: white;
+
+        h1 {
+            letter-spacing: 5px;
+        }
+
+        h2 {
+            letter-spacing: 2px;
+        }
+
+    }
+
+    .navigation {
+        float: right;
+        font-weight: 600;
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            padding: 25px;
+            letter-spacing: 5px;
+            border-color: rgba(255, 255, 255, 0);
+            transition: border-color 300ms;
+        }
+
+        a:hover {
+            border-bottom: 1px solid;
+            border-color: rgba(255, 255, 255, 1);
+        }
+
+
+        @media screen and (max-width: 1200px) {
+
+            a {
+                padding-right: 15px;
+                padding-left: 15px;
+                letter-spacing: 5px;
+            }
+        }
+
+        @media screen and (max-width: 1025px) {
+            a {
+                padding-right: 10px;
+                letter-spacing: 2px;
+            }
+        }
+
+        @media screen and (max-width: 950px) {
+            display: none;
+        }
+
+    }
+
+    //wrapper nawigacji
+    @media screen and (max-width: 1200px) {
+        padding: 35px 10px;
+    }
+
+    @media screen and (max-width: 769px) {
+        padding: 15px;
+    }
+
+
+    @media screen and (max-width: 500px) {
+        .logo {
+            margin-left: 5px;
+            margin-top: 20px;
+
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .logo {
+            margin-left: 0px;
+            margin-top: 20px;
+
+        }
+    }
+}
